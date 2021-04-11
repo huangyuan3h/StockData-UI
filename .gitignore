@@ -39,5 +39,8 @@ lib/*.js
 test/*.js
 *.map
 
+# next js
+.next/*
+
 # IDE
 .vscode
