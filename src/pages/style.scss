@@ -1,5 +1,9 @@
 @import '~@mango-solution/mango-ui/dist/styles/themes/skyline/index';
 
+svg {
+  width: 100%;
+  height: 100%;
+}
 
 // shared components
 @import '../components/Header/_header';

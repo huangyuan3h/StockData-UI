@@ -7,8 +7,11 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
   return (
     <BaseHeader>
-      <div className="header-icon">
-        <QuarkIcon />
+      <div className="logo">
+        <div className="header-icon">
+          <QuarkIcon />
+        </div>
+        <div className="header-title">夸克量化</div>
       </div>
     </BaseHeader>
   );
