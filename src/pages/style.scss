@@ -1,4 +1,4 @@
-@import '~@mango-solution/mango-ui/dist/styles/themes/skyline/index';
+@import "~@mango-solution/mango-ui/dist/styles/themes/skyline/index";
 
 svg {
   width: 100%;
@@ -6,4 +6,4 @@ svg {
 }
 
 // shared components
-@import '../components/Header/_header';
+@import "../components/Header/styles/index";

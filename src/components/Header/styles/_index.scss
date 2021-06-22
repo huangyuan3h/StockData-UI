@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  .header-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    cursor: pointer;
+    width: rem(114);
+    display: flex;
+    padding: rem(8) 0;
+    color: $sk-white;
+    .header-icon {
+      height: 100%;
+      width: rem(36);
+    }
+    .header-title {
+      margin-left: rem(4);
+      font-size: rem(18);
+      line-height: rem(34);
+    }
+  }
+
+  .header-menu-area {
+    padding: rem(8) 0 rem(8) rem(12);
+  }
+
+  .HeaderMenu {
+    font-size: rem(18);
+    color: $sk-white;
+    &.active {
+      border-bottom: 1px solid $sk-white;
+    }
+  }
+}
