@@ -984,10 +984,10 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
   integrity sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw==
 
-"@mango-solution/mango-ui@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@mango-solution/mango-ui/-/mango-ui-0.0.34.tgz#d9cfab21b06e62efe7cc8a80137343f95019e0f8"
-  integrity sha512-IjVkD33YJv7OoBSRM5I5qzdGIBmmGSxWYzTYoxsCEdSXjhSp9pFk5Flk/BCbKBhixFZu+SkLvojrSMaVTOrcHw==
+"@mango-solution/mango-ui@^0.0.36":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@mango-solution/mango-ui/-/mango-ui-0.0.36.tgz#febbdf22d0d66bc7219e8b53994d9a5ceefe5ba6"
+  integrity sha512-SGvf63IagGrKyQSjWfmUShcx1oKTDELtLqNZL2bncLiC0Zw2rWD5Y9hSS1F7fCJEMTVKCpHzFwmZg+HxDWC+UA==
   dependencies:
     "@types/draft-js" "^0.10.41"
     clsx "^1.1.1"

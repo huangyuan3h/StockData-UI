@@ -7,7 +7,7 @@
 
   .logo {
     cursor: pointer;
-    width: rem(114);
+    width: rem(120);
     display: flex;
     padding: rem(8) 0;
     .header-icon {
@@ -17,7 +17,7 @@
     }
     .header-title {
       margin-left: rem(4);
-      @include titleText;
+      @include bannerText;
       line-height: rem(34);
     }
   }
