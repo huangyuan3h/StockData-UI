@@ -10,27 +10,28 @@
     width: rem(114);
     display: flex;
     padding: rem(8) 0;
-    color: $sk-white;
     .header-icon {
       height: 100%;
       width: rem(36);
+      color: $sk-white;
     }
     .header-title {
       margin-left: rem(4);
-      font-size: rem(18);
+      @include titleText;
       line-height: rem(34);
     }
   }
 
   .header-menu-area {
-    padding: rem(8) 0 rem(8) rem(12);
+    padding: 0 0 0 rem(18);
   }
 
   .HeaderMenu {
-    font-size: rem(18);
-    color: $sk-white;
+    @include titleText;
+    padding: rem(16) 0;
+    cursor: pointer;
     &.active {
-      border-bottom: 1px solid $sk-white;
+      border-bottom: 2px solid $sk-white;
     }
   }
 }
