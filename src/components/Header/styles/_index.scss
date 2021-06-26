@@ -24,6 +24,9 @@
 
   .header-menu-area {
     padding: 0 0 0 rem(18);
+    display: flex;
+    justify-content: space-between;
+    width: rem(150);
   }
 
   .HeaderMenu {

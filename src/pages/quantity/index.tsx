@@ -5,7 +5,7 @@ const Index: NextPage = () => {
   return (
     <div>
       <Header />
-      search page
+      quantity page
     </div>
   );
 };

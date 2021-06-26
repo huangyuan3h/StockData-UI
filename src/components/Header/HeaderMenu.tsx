@@ -4,7 +4,7 @@ import { useRouter } from "next/dist/client/router";
 interface HeaderMenuProps {
   text: string;
   path: string;
-  active: boolean;
+  active?: boolean;
 }
 
 const HeaderMenu: React.FC<HeaderMenuProps> = ({
