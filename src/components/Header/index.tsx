@@ -27,7 +27,18 @@ const quantityMenu: HeaderMenuItemType[] = [
   },
 ];
 
-const taskMenu: HeaderMenuItemType[] = [];
+const taskMenu: HeaderMenuItemType[] = [
+  {
+    value: "taskManagement",
+    text: "任务管理",
+    path: "/taskManagement",
+  },
+  {
+    value: "newTask",
+    text: "新增",
+    path: "/newTask",
+  },
+];
 
 const Header: React.FC<HeaderProps> = () => {
   const router = useRouter();
