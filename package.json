@@ -12,7 +12,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mango-solution/mango-ui": "^0.0.41",
+    "@mango-solution/mango-ui": "^0.0.42",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
     "draft-js": "^0.11.7",

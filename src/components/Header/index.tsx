@@ -27,6 +27,8 @@ const quantityMenu: HeaderMenuItemType[] = [
   },
 ];
 
+const taskMenu: HeaderMenuItemType[] = [];
+
 const Header: React.FC<HeaderProps> = () => {
   const router = useRouter();
   console.log(router.pathname);
@@ -39,7 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
           active={router.pathname === MenuType.homePage}
         />
         <HeaderMenu text="量化" path="/quantity" subMenu={quantityMenu} />
-        <HeaderMenu text="任务" path="/task" />
+        <HeaderMenu text="任务" path="/task" subMenu={taskMenu} />
       </div>
     </DistractionFreeHeader>
   );

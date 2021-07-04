@@ -34,14 +34,26 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
     setMenuOpen(true);
   };
 
-  const handleMenuItemClick = () => {
+  const handleMenuItemClick = (val: string) => {
     setMenuOpen(false);
+
+    if (!hasSubMenu) return;
+
+    const currentItem = subMenu.find((i) => i.value === val);
+
+    if (!currentItem) return;
+
+    router.push(`${path}${currentItem.path}`);
   };
 
   const renderSubMenu = () => {
     if (!hasSubMenu) return <></>;
     return (
-      <Menu hidden={!menuOpen} onClick={handleMenuItemClick}>
+      <Menu
+        hidden={!menuOpen}
+        onClick={handleMenuItemClick}
+        setHidden={(hidden) => setMenuOpen(!hidden)}
+      >
         {subMenu.map(({ value, text }) => (
           <MenuItem key={value} value={value} label={text} />
         ))}
