@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     width: rem(150);
+    position: relative;
   }
 
   .HeaderMenu {
@@ -36,5 +37,18 @@
     &.active {
       border-bottom: 2px solid $sk-white;
     }
+  }
+
+  .Menu {
+    top: rem(56);
+    width: rem(96);
+  }
+
+  .quantity + .Menu {
+    left: rem(46);
+  }
+
+  .task + .Menu {
+    left: rem(108);
   }
 }

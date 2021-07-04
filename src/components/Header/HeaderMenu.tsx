@@ -10,6 +10,7 @@ export interface HeaderMenuItemType {
 }
 
 interface HeaderMenuProps {
+  value?: string;
   text: string;
   path: string;
   active?: boolean;
@@ -17,6 +18,7 @@ interface HeaderMenuProps {
 }
 
 const HeaderMenu: React.FC<HeaderMenuProps> = ({
+  value,
   text,
   path,
   active,
@@ -63,7 +65,10 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
 
   return (
     <>
-      <div className={clsx("HeaderMenu", { active })} onClick={handleClick}>
+      <div
+        className={clsx("HeaderMenu", { active }, value)}
+        onClick={handleClick}
+      >
         {text}
       </div>
       {renderSubMenu()}

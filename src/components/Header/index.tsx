@@ -64,12 +64,14 @@ const Header: React.FC<HeaderProps> = () => {
           path="/quantity"
           subMenu={quantityMenu}
           active={isActive(quantityMenu)}
+          value="quantity"
         />
         <HeaderMenu
           text="任务"
           path="/task"
           subMenu={taskMenu}
           active={isActive(taskMenu)}
+          value="task"
         />
       </div>
     </DistractionFreeHeader>
