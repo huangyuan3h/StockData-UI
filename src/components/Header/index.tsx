@@ -42,7 +42,15 @@ const taskMenu: HeaderMenuItemType[] = [
 
 const Header: React.FC<HeaderProps> = () => {
   const router = useRouter();
-  console.log(router.pathname);
+
+  const isActive = (subMenu: HeaderMenuItemType[]): boolean => {
+    const menu = subMenu.find((i) => {
+      return router.pathname.indexOf(i.path) >= 0;
+    });
+
+    return !!menu;
+  };
+
   return (
     <DistractionFreeHeader>
       <div className="header-menu-area">
@@ -51,8 +59,18 @@ const Header: React.FC<HeaderProps> = () => {
           path="/"
           active={router.pathname === MenuType.homePage}
         />
-        <HeaderMenu text="量化" path="/quantity" subMenu={quantityMenu} />
-        <HeaderMenu text="任务" path="/task" subMenu={taskMenu} />
+        <HeaderMenu
+          text="量化"
+          path="/quantity"
+          subMenu={quantityMenu}
+          active={isActive(quantityMenu)}
+        />
+        <HeaderMenu
+          text="任务"
+          path="/task"
+          subMenu={taskMenu}
+          active={isActive(taskMenu)}
+        />
       </div>
     </DistractionFreeHeader>
   );
