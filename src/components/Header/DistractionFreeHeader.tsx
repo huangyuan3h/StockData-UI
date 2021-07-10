@@ -1,22 +1,26 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useState } from 'react';
 import {
   Header as BaseHeader,
   Animation,
   AnimationState,
   AnimationType,
-} from "@mango-solution/mango-ui";
+} from '@mango-solution/mango-ui';
 
-import QuarkIcon from "../../svg/quark.svg";
+import QuarkIcon from '../../svg/quark.svg';
 
 interface DistractionFreeHeaderProps {
   children?: ReactNode;
 }
 
+const defaultProps = {
+  children: null,
+};
+
 const DistractionFreeHeader: React.FC<DistractionFreeHeaderProps> = ({
   children,
 }: DistractionFreeHeaderProps) => {
   const [IconAnimationState, setIconAnimationState] = useState(
-    AnimationState.initial
+    AnimationState.initial,
   );
   const handleMouseOver = () => {
     setIconAnimationState(AnimationState.active);
@@ -43,5 +47,7 @@ const DistractionFreeHeader: React.FC<DistractionFreeHeaderProps> = ({
     </BaseHeader>
   );
 };
+
+DistractionFreeHeader.defaultProps = defaultProps;
 
 export default DistractionFreeHeader;

@@ -1,46 +1,44 @@
-import { useRouter } from "next/dist/client/router";
-import React from "react";
-import DistractionFreeHeader from "./DistractionFreeHeader";
-import HeaderMenu, { HeaderMenuItemType } from "./HeaderMenu";
-
-interface HeaderProps {}
+import { useRouter } from 'next/dist/client/router';
+import React from 'react';
+import DistractionFreeHeader from './DistractionFreeHeader';
+import HeaderMenu, { HeaderMenuItemType } from './HeaderMenu';
 
 enum MenuType {
-  homePage = "/",
+  homePage = '/',
 }
 
 const quantityMenu: HeaderMenuItemType[] = [
   {
-    value: "stockData",
-    text: "大盘数据",
-    path: "/stockData",
+    value: 'stockData',
+    text: '大盘数据',
+    path: '/stockData',
   },
   {
-    value: "methodology",
-    text: "算法",
-    path: "/methodology",
+    value: 'methodology',
+    text: '算法',
+    path: '/methodology',
   },
   {
-    value: "results",
-    text: "预测结果",
-    path: "/results",
+    value: 'results',
+    text: '预测结果',
+    path: '/results',
   },
 ];
 
 const taskMenu: HeaderMenuItemType[] = [
   {
-    value: "taskManagement",
-    text: "任务管理",
-    path: "/taskManagement",
+    value: 'taskManagement',
+    text: '任务管理',
+    path: '/taskManagement',
   },
   {
-    value: "newTask",
-    text: "新增",
-    path: "/newTask",
+    value: 'newTask',
+    text: '新增',
+    path: '/newTask',
   },
 ];
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   const router = useRouter();
 
   const isActive = (subMenu: HeaderMenuItemType[]): boolean => {
