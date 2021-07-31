@@ -1,7 +1,7 @@
-import clsx from "clsx";
-import { useRouter } from "next/dist/client/router";
-import { Menu, MenuItem } from "@mango-solution/mango-ui";
-import { useState } from "react";
+import clsx from 'clsx';
+import React, { useState } from 'react';
+import { useRouter } from 'next/dist/client/router';
+import { Menu, MenuItem } from '@mango-solution/mango-ui';
 
 export interface HeaderMenuItemType {
   value: string;
@@ -16,6 +16,12 @@ interface HeaderMenuProps {
   active?: boolean;
   subMenu?: HeaderMenuItemType[];
 }
+
+const defaultProps = {
+  value: undefined,
+  active: false,
+  subMenu: undefined,
+};
 
 const HeaderMenu: React.FC<HeaderMenuProps> = ({
   value,
@@ -56,8 +62,8 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
         onClick={handleMenuItemClick}
         setHidden={(hidden) => setMenuOpen(!hidden)}
       >
-        {subMenu.map(({ value, text }) => (
-          <MenuItem key={value} value={value} label={text} />
+        {subMenu.map(({ value: v, text: t }) => (
+          <MenuItem key={v} value={v} label={t} />
         ))}
       </Menu>
     );
@@ -66,8 +72,11 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
   return (
     <>
       <div
-        className={clsx("HeaderMenu", { active }, value)}
+        className={clsx('HeaderMenu', { active }, value)}
         onClick={handleClick}
+        role="button"
+        tabIndex={0}
+        onKeyPress={() => undefined}
       >
         {text}
       </div>
@@ -75,5 +84,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
     </>
   );
 };
+
+HeaderMenu.defaultProps = defaultProps;
 
 export default HeaderMenu;
