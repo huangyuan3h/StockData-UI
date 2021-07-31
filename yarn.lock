@@ -1007,10 +1007,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@mango-solution/eslint-config@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@mango-solution/eslint-config/-/eslint-config-0.0.17.tgz#554f058613c9330ff04f2d94b0b7ebb22ebf9399"
-  integrity sha512-tDqj+BRdc7cjGfDpfNTC0NDrvUbEQjRcznUf/sLd+giBtK/viknKE90eF2fUQOTGPipWZxxz/sQDSudCOUuSjg==
+"@mango-solution/eslint-config@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@mango-solution/eslint-config/-/eslint-config-0.0.18.tgz#3341fccbdac3e7ce705c5ad1b4ccdb14b51f00d9"
+  integrity sha512-TIR+kRuhsphjs/seC6xhL8JYYKX0LMBdntuC7pxZM6oftucTH88RySyi/V4W2Nk8MaLt0Suvzpe5EtLE4SFeHQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.2"
     "@typescript-eslint/parser" "^4.28.2"
@@ -1026,10 +1026,10 @@
     tsutils "^3.21.0"
     typescript "^4.3.5"
 
-"@mango-solution/mango-ui@^0.0.50":
-  version "0.0.50"
-  resolved "https://registry.yarnpkg.com/@mango-solution/mango-ui/-/mango-ui-0.0.50.tgz#4d4f4e402c612780bf3e3825861b25ba7b1962c2"
-  integrity sha512-iIyfT43YeI2fLha2lP6MHtRHnMe27pA6XbW0LHMYe8bO4W+YzoSiFiJ2OQvN21GUoi5K8Ao01Qbhx5nCJtQN0Q==
+"@mango-solution/mango-ui@^0.0.51":
+  version "0.0.51"
+  resolved "https://registry.yarnpkg.com/@mango-solution/mango-ui/-/mango-ui-0.0.51.tgz#4f09b9f08e991f687c61cb5750213da39f928758"
+  integrity sha512-hcuG+jVu/wmcC1QYeQBwAycw4K4gKllu2QGHykOOUY/G9+aB98JOCJlGT6Wp9f9YQPlH6pR3xz+lOpVntSgmvw==
   dependencies:
     "@types/draft-js" "^0.11.4"
     clsx "^1.1.1"

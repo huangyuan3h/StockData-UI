@@ -13,7 +13,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mango-solution/mango-ui": "^0.0.50",
+    "@mango-solution/mango-ui": "^0.0.51",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
     "draft-js": "^0.11.7",
@@ -23,7 +23,7 @@
     "sass": "^1.32.12"
   },
   "devDependencies": {
-    "@mango-solution/eslint-config": "^0.0.17",
+    "@mango-solution/eslint-config": "^0.0.18",
     "@types/next": "^9.0.0",
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
