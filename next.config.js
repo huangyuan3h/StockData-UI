@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    outputStandalone: true,
+  },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.svg$/,
